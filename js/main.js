@@ -6,6 +6,25 @@ $(window).on("load", function () {
 
 
 });
+ // Sidemenu 
+
+ $("#nav-icon").click( function() {
+  $('#nav-icon').toggleClass('nav-icon_open');
+  $('.sidenav').toggleClass('open');
+  $(this).toggleClass('open');   
+  $('body').toggleClass('ovh');
+});
+$("#openNav").click( function() {
+
+     
+});
+
+$(".closebtn,.overlay").click( function() {
+  $('.sidenav').removeClass('open');
+  $('.overlay').fadeOut();
+  $('body').removeClass('ovh');
+});
+
 $(document).ready(function(){
 
   $('.slider-head').owlCarousel({
@@ -25,7 +44,7 @@ $(document).ready(function(){
     margin:25,
     loop:false,
     nav: true,
-    dots:false,
+    dots:true,
     responsive: {
         0: {
             items: 1
@@ -34,7 +53,7 @@ $(document).ready(function(){
             items: 2
         },
         767: {
-            items: 3
+            items: 2
         },
         991: {
             items: 3   
@@ -55,7 +74,7 @@ $(document).ready(function(){
     margin:25,
     loop:false,
     nav: true,
-    dots:false,
+    dots:true,
     responsive: {
         0: {
             items: 1
@@ -64,7 +83,7 @@ $(document).ready(function(){
             items: 2
         },
         767: {
-            items: 3
+            items: 2
         },
         991: {
             items: 3   
@@ -85,7 +104,7 @@ $(document).ready(function(){
     margin:25,
     loop:false,
     nav: true,
-    dots:false,
+    dots:true,
     responsive: {
         0: {
             items: 1
@@ -94,7 +113,7 @@ $(document).ready(function(){
             items: 2
         },
         767: {
-            items: 3
+            items: 2
         },
         991: {
             items: 3   
@@ -118,5 +137,14 @@ $(".down[data-toggle='collapse']").on('click', function() {
   $(this).parent().children('.collapse').collapse('toggle');
   $(this).parent().siblings().find('.collapse.in').collapse('hide');
 });
+// window.onscroll = function() {scrollFunction()};
 
-})
+// function scrollFunction() {
+//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+//     $('.top').addClass('fixedheader');
+//   } else {
+//     $('.top').removeClass('fixedheader');
+//   }
+// }
+
+});
