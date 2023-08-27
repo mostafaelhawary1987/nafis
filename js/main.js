@@ -137,14 +137,14 @@ $(".down[data-toggle='collapse']").on('click', function() {
   $(this).parent().children('.collapse').collapse('toggle');
   $(this).parent().siblings().find('.collapse.in').collapse('hide');
 });
-// window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-//     $('.top').addClass('fixedheader');
-//   } else {
-//     $('.top').removeClass('fixedheader');
-//   }
-// }
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    $('.top').addClass('fixedheader');
+  } else {
+    $('.top').removeClass('fixedheader');
+  }
+}
 
 });

@@ -480,13 +480,13 @@ html[dir="ltr"] .side-menu .sub_list li {
 }
 .top{margin-bottom: 35px;}
 .top.fixedheader{
-  height: 85px;
+  height: 90px;
   position: fixed;
   top:0;
   right: 0;
   left: 0;
   z-index: 9999;
-  background-image: url(../image/pattern2.png);
+  background-image: url(../images/pattern2.png);
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
   box-shadow:  0px 0px 8px 0px rgba(1, 1, 1, 0.1);   
@@ -495,8 +495,10 @@ html[dir="ltr"] .side-menu .sub_list li {
   transition: 0.4s ease; 
 }
 .top.fixedheader .logo-head img {
-  width: 80px;
+  width: 142px;
+  height: 68px;
 }
+.top.fixedheader .top-head{padding-top: 10px;}
 /*------------menu-head------------*/
 .logo-head img{width: 177px;
   height: 80px;}
