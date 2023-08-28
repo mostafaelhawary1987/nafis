@@ -128,6 +128,36 @@ $(document).ready(function(){
     navText: ['<i class="las la-arrow-right"></i>','<i class="las la-arrow-left"></i>'],
 
 });
+  $('.owl-related-book').owlCarousel({
+    autoplay: false,
+    rtl: true,
+    margin:25,
+    loop:false,
+    nav: true,
+    dots:true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        480: {
+            items: 2
+        },
+        767: {
+            items: 2
+        },
+        991: {
+            items: 3   
+        },
+        1199: {
+            items: 4
+        },
+        1200: {
+            items: 4
+        }
+    },
+    navText: ['<i class="las la-arrow-right"></i>','<i class="las la-arrow-left"></i>'],
+
+});
 $("h5[data-toggle='collapse']").on('click', function() {
   $(this).parent().children('.collapse').collapse('toggle');
   $(this).parent().parent().siblings().find('.collapse.in').collapse('hide');
