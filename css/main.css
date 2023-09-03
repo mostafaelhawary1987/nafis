@@ -2334,7 +2334,7 @@ padding: 5px;
       .ask-send .btn{margin-top: 0;width: 100%;
       }
       }
-      .section-contact-us .home-bg{position: absolute;
+      .section-contact-us .home-bg,.section-about-us .home-bg{position: absolute;
         left: 0;
         width: auto;
         top: 0;
