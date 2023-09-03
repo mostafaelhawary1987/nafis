@@ -2054,8 +2054,8 @@ footer {
     }
     /* Login page */
     /* Login */
-    .login-section{position: relative;}
-    .login-section .home-bg{position: absolute;
+    .login-section,.add-book-section{position: relative;}
+    .login-section .home-bg,.add-book-section .home-bg{position: absolute;
       left: 0;
       width: auto;
       top: 0;
@@ -2071,7 +2071,7 @@ footer {
         margin-top: 20px
   
     }
-.login-form {
+.login-form,.add-book-form {
   width: 40%;
   margin: auto;
   background-color: #fff;
@@ -2086,7 +2086,7 @@ footer {
   position: relative;
   margin-bottom: 10px;
 }
-.login-form label {
+.login-form label,.add-book-form label{
   color: var(--contact-color);
     font-size: 14px;
     padding-right: 5px;
@@ -2094,7 +2094,7 @@ footer {
     font-weight: 700;
     font-family: "tjMd";
 }
-.login-form input {
+.login-form input,.add-book-form input{
   border: 1px solid rgb(242, 242, 242);
   background-color: rgb(255, 255, 255);
   border-radius: 3px;
@@ -2142,11 +2142,11 @@ footer {
 }
 
 @media (max-width: 991px) {
-  .login-form {
+  .login-form,.add-book-form {
     width: 70%;
 }}
 @media (max-width: 480px) {
-  .login-form {
+  .login-form,.add-book-form {
     width: 90%;
 }
 .head-title h2 {
@@ -2349,3 +2349,190 @@ padding: 5px;
   border-radius: 15px;
   margin-bottom: 60px;
 }
+/* Add-Book */
+.add-book-form input[type="radio"] {
+  display: none;
+}
+.add-book-form input[type="radio"] + label {
+  z-index: 10;
+  margin: 0 10px 10px 0;
+  position: relative;
+  color: var(--grey-color);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 1px solid var(--grey-color);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+.add-book-form input[type="radio"]:checked + label {
+  color: var(--white-color);
+  border-color: var(--main-color);
+  background-color: var(--main-color);
+}
+.add-book-form input[type="radio"] + label {
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+.kind-book-flex,.status-book-flex,.type-book-flex{margin-top: 8px;}
+.book-img-flex label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.book-img-flex .user-img {
+  border: 1px dashed #bdbdbd;
+  width: 128px;
+  height: 128px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 72px;
+  color: #bdbdbd;
+  margin-top: 10px;
+
+}
+.book-img-flex{position: relative;margin-bottom: 30px;}
+.book-img-flex .la-camera-retro {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  width: 38px;
+  height: 38px;
+  font-size: 17px;
+  position: absolute;
+    color: var(--sec-color);
+    bottom: -15px;
+    cursor: pointer;
+}
+
+/* contactForm */
+
+#contactForm {
+  display: none;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  padding: 2em;
+  text-align: center;
+  z-index: 9999999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
+  box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
+  border-radius: 15px;
+  height: 100%;
+  overflow: scroll;
+}
+
+#contactForm .close {
+  position: absolute;
+  top: 40px;
+  color: rgb(230, 230, 230);
+  opacity: 1;
+  font-size: 24px;
+  left: 40px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+#contactForm .close:focus,
+#contactForm .close:hover {
+  color: #141933
+}
+#contactForm h5{position: relative;}
+#contactForm h5::after {
+  top: 35px;
+  bottom: 0;
+  content: "";
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  background-color: rgb(1, 139, 153);
+  left: 50%;
+  transform: translateX(-50%);
+}
+#contactForm p{margin-top: 30px;
+  margin-bottom: 15px;
+  text-align: right;
+  font-weight: 500;
+  font-family: "tjMd";}
+.contact-over {
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.confirm-title{text-align: right;}
+.confi-flex span{    color: var(--main-color);
+  font-size: 16px;
+  font-weight: 700;}
+  .confi-flex i{font-size: 22px;color: var(--main-color);}
+  .confirm-title ul{    margin: 10px 0px;}
+  .confirm-title ul li{
+    color: var(--contact-color);
+    font-weight: 400;
+    font-size: 16px;
+    list-style-type: disc;
+    margin: 0px 20px;
+  }
+.add-book-form {
+    width: 55%;}
+    @media(max-width:992px) {
+    .add-book-form {
+      width: 70%;
+  }
+  #contactForm {
+    height: 100%;
+    overflow: scroll;
+}
+}
+    @media(max-width:991px) {
+    .add-book-form {
+      width: 80%;
+  }}
+    @media(max-width:480px) {
+    .add-book-form {
+      width: 93%;
+  }
+  #contactForm {
+    width: 425px;}
+}
+@media(max-width:425px) {
+#contactForm {
+
+  width: 340px;}}
+/*  */

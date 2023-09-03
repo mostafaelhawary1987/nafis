@@ -178,3 +178,36 @@ function scrollFunction() {
 }
 
 });
+$(function() {
+  
+    // contact form animations 
+    $('#contact').click(function() {
+      $('#contactForm').fadeIn();
+      $('.contact-over').fadeIn();
+     
+    })
+    $(document).mouseup(function (e) {
+      var container = $("#contactForm");
+  
+      if (!container.is(e.target) // if the target of the click isn't the container...
+          && container.has(e.target).length === 0) // ... nor a descendant of the container
+      {
+          container.fadeOut();
+          $('.contact-over').fadeOut();
+      }
+    });
+    
+  });
+
+  $('#contactForm button.close').on('click ', function(event) {
+    $('#contactForm').fadeOut();
+    $('.contact-over').fadeOut();
+});
+if ($(window).width() <= 425){ 
+    $(".wow").removeClass("wow");
+    }
+    
+
+    $('.formBtn').click(function(){
+        $("#contactForm button.close").trigger('click');
+    });
