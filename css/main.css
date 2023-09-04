@@ -49,6 +49,8 @@
       url("../fonts/Tajawal-Black.eot") format("eot");
   }
   a,
+  p,
+  span,
   .h1,
   .h2,
   .h3,
@@ -882,6 +884,7 @@ html[dir="ltr"] .nav-head {    left: 0;
 
 
 .select-item{overflow: hidden;-webkit-transition: 0.8s ease;
+  cursor: pointer;
   -o-transition: 0.8s ease;
   transition: 0.8s ease;}
 .select-item:hover .select-item img{
@@ -891,7 +894,7 @@ html[dir="ltr"] .nav-head {    left: 0;
     -o-transform: scale(1.1);
     transform: scale(1.1);
 }
-.select-item a:hover .select-detials p{
+.select-item:hover .select-detials p{
   color: var(--main-color);
 }
 .discount {text-decoration: line-through;
@@ -1259,6 +1262,7 @@ footer {
 .copy {
   color: var(--contact-color);
   font-size: 12px;
+  font-family: "tj";
 }
 
 @media (max-width:1024px) {
