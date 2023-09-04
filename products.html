@@ -179,19 +179,83 @@
 <div class="grid-products">
   <div class="container">
     <div class="products-flex">
-      <div class="name-products">
-        <h4>الأقسام</h4>
-        <ul class="product-tab">
-          <li><a href="#!">اللغات</a></li>
-          <li><a href="#!">التاريخ</a></li>
-          <li><a href="#!">العلوم</a></li>
-          <li><a href="#!">الهندسة</a></li>
-          <li><a href="#!">الحاسوب</a></li>
-          <li><a href="#!">الأحياء </a></li>
-          <li><a href="#!">الروايات</a></li>
-        </ul>
+      <div class="cate-products">
+            <div class="name-products">
+              <h4>الأقسام</h4>
+                <ul class="product-tab">
+                  <li><a href="#!">اللغات</a></li>
+                  <li><a href="#!">التاريخ</a></li>
+                  <li><a href="#!">العلوم</a></li>
+                  <li><a href="#!">الهندسة</a></li>
+                  <li><a href="#!">الحاسوب</a></li>
+                  <li><a href="#!">الأحياء </a></li>
+                  <li><a href="#!">الروايات</a></li>
+                </ul>
+            </div>
+            <div class="product-filter">
 
+              <h5>فلترة البحث</h5>
+              <div class="fi-group">
+                <div class="form-group">
+                  <label for="filterText">الكاتب</label>
+                  <input type="text" class="form-control" id="filterText" placeholder="إسم الكاتب">
+                </div>
+                <h4>النوع</h4>
+                <div class="box-radio">
+                  <div class="cell">
+                    <label for="pikachu">
+                      <input type="radio" name="pokemon" value="pikachu" id="pikachu" checked>
+                      <span class="circle"></span>
+                      ملموس
+                  
+                    </label>
+                  </div>
+                  <div class="cell">
+                    <label for="eevee">
+                      <input type="radio" name="pokemon" value="eevee" id="eevee" checked>
+                      <span class="circle"></span>
+                      رقمى
+                  
+                    </label>
+                  </div>
+                </div>
+            
+                
+                <div class="form-group">
+                  <label for="exampleInputEmail1">الحالة</label>
+                  <div class="cont"> 
+                      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                          <option selected>أختر الحالة</option>
+                          <option value="1">جديد</option>
+                          <option value="2">جيد</option>
+                          <option value="3">جيد جدا</option>
+                          <option value="4">مستعمل بحالة ممتازة</option>
+                          <option value="5">مستعمل بحالة جيدة</option>
+                      </select>
+                  </div> 
+                </div>
+
+                <div class="status-book">
+                  <label for="status-book">التصنيف</label>
+                  <div class="status-book-flex">
+                      <input type='radio' id='new1' checked='checked' name='radio'>
+                      <label for='new1'>تاريخ</label>
+
+                      <input type='radio' id='used2' name='radio'>
+                      <label for='used2'>احياء</label>
+
+                      <input type='radio' id='good4' name='radio'>
+                      <label for='good4'>علوم</label>
+
+                      <input type='radio' id='good5' name='radio'>
+                      <label for='good5'>لغات</label>
+                  </div>
+                </div>  
+
+              </div>  
+            </div>
       </div>
+      
       <div class="items-products">
         <div class="items-flex">
           <div class="select-item">

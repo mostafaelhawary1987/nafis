@@ -50,6 +50,7 @@
   }
   a,
   p,
+  label,
   span,
   .h1,
   .h2,
@@ -701,8 +702,14 @@ html[dir="ltr"] .nav-head {    left: 0;
   background-color: var(--sec-color);
 }
 .icon-lang i{font-size:21px;}
-.lang-list{     left: 22px;top:40px
-  ;   min-width: 110px;width: 124px;    padding: 5px 10px;}
+.lang-list{ left: 22px;
+  top: 40px;
+  min-width: 118px;
+  width: 137px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
   .lang-list>a{    -webkit-transition: 0.4s ease;
     -o-transition: 0.4s ease;
     transition: 0.4s ease; color: var(--contact-color);}
@@ -1504,9 +1511,10 @@ footer {
   }
   /* ===================================== */
 .products-flex{display: flex;}
-.name-products{width: 20%;border: 1px solid #D9D9D9;background-color: var(--white-color);
-  border-radius: 15px;height: 100%;
-  padding: 25px 30px;}
+.cate-products{width: 20%;height: 100%;}
+.name-products{border: 1px solid #D9D9D9;background-color: var(--white-color);
+  border-radius: 15px;
+  padding: 25px 17px;}
 .items-products{width: 80%;}
 .items-flex .select-item{width: 267px;margin-bottom: 30px;}
 .select-item{position: relative;}
@@ -1559,6 +1567,7 @@ footer {
  
     
 }
+.product-icon i{font-size: 20px;}
   
 .pro-overlay {
   position: absolute;
@@ -1571,10 +1580,135 @@ footer {
   transition: 0.5s ease;
 }
 
+label input[type=radio],
+label input[type=checkbox] {
+    display: none;
+}
+
+.cell {
+    position: relative;
+    display: block;
+}
+
+.cell label {
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #575757;
+    font-size: 14px;
+   
+}
+
+.cell label>span.circle {
+  position: relative;
+  top: 4px;
+  left: 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.1); */
+  border: 1px solid rgb(209, 209, 209);
+}
+
+.cell label>span.circle {
+    border-radius: 3px;
+}
+
+.cell label input[type=radio]:checked~span.circle {
+    border-color: rgb(209, 209, 209);
+}
+
+.cell label input[type=radio]:checked~span.circle:after {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  display: inline-block;
+  background-color: var(--main-color);
+  width: 8px;
+  height: 8px;
+  top: 1px;
+  left: 1px;
+}
+.fi-group .form-control{font-size: 13px;}
+.fi-group .form-select-lg{
+  height: 38px;
+    box-shadow: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: "tj";
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+.box-radio{margin-bottom: 10px;}
+.fi-group .box-radio .cell label{margin-bottom: 0;font-weight: 200;}
+.product-filter{border: 1px solid #D9D9D9;
+  background-color: var(--white-color);
+  border-radius: 15px;
+  
+  margin-top: 15px;}
+  .product-filter h5{background-color: var(--contact-color);
+    color: var(--white-color);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 12px 0px;
+    border-radius: 10px 10px 0px 0px;}
+    .fi-group{padding: 5px 15px;}
+    .fi-group label {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      font-family: "tj";
+  }
+  .fi-group h4{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family: "tj";
+
+  }
+  .products-flex .status-book input[type="radio"] {
+    display: none;
+  }
+  .products-flex .status-book input[type="radio"] + label {
+    z-index: 10;
+    margin: 0 0px 5px 0;
+    position: relative;
+    color: #aaacae;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    cursor: pointer;
+    transition: all 200ms ease;
+    font-weight: 100;
+    font-size: 14px;
+  }
+  .products-flex .status-book input[type="radio"]:checked + label {
+    color: var(--white-color);
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+  }
+  .products-flex .status-book input[type="radio"] + label {
+    padding: 5px 15px;
+    border-radius: 8px;
+  }
+  .products-flex .status-book .status-book-flex{margin-bottom: 10px;
+    margin-top: 2px;}
+
 .items-flex{justify-content: space-around;display: flex;    flex-wrap: wrap;}
 .name-products h4{font-size: 19px;
   font-weight: 700;}
-  .product-tab{padding: 0px 20px;}
+  .product-tab{padding: 0px 30px;}
   .product-tab li{    list-style-type: square;
     color: var(--contact-color);}
     .product-tab li a{   -webkit-transition: all 0.5s;
