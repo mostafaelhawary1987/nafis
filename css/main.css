@@ -2684,8 +2684,16 @@ padding: 5px;
     font-weight: unset;
 }
 /* Account Section */
-.account-section{}
-.account-section .home-bg{}
+
+.account-section{position: relative;}
+.account-section .home-bg,
+.section-orders .home-bg
+{position: absolute;
+  left: 0;
+  width: auto;
+  top: 0;
+  z-index: -1;
+  transform: translateY(50%);}
 .account-flex{}
 .account-flex ul{
   display: flex;
@@ -2726,3 +2734,39 @@ padding: 5px;
   .account-flex ul {
     justify-content: center;
 }}
+/* Orders Section */
+.section-orders{position: relative;}
+.orders-card {
+
+    border-radius: 15px;
+    padding: 10px;
+    background-color: var(--white-color);
+    width: 60%;
+    margin: auto;
+}
+.order-flex{
+  display: flex;
+    border: 1px solid #ebe8e8;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+.orders-photo img{
+  width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+.orders-details{margin: 0 10px;width: 80%;}
+.product_data span:first-of-type{
+  font-weight: 600;
+    font-size: 14px;
+    width: 60px;
+    display: inline-block;
+}
+.orders-photo{width: 20%;}
+.data-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.orders-btn i{font-size: 18px;}
