@@ -2687,7 +2687,9 @@ padding: 5px;
 
 .account-section{position: relative;}
 .account-section .home-bg,
-.section-orders .home-bg
+.section-orders .home-bg,
+.section-single-order .home-bg
+
 {position: absolute;
   left: 0;
   width: auto;
@@ -2770,3 +2772,27 @@ padding: 5px;
   justify-content: space-between;
 }
 .orders-btn i{font-size: 18px;}
+/* Single Order */
+.section-single-order{position: relative;}
+.order-tabs{
+  background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    margin-top: 60px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
+    box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
+}
+.order-tabs .nav-pills .nav-link.active,.order-tabs .nav-pills .show>.nav-link {
+  color: var(--white-color);
+  background-color: var(--main-color);
+}
+.order-tabs .nav-pills .nav-link {
+  background-color: #f0eeee;
+  margin: 0px 5px;
+  border: 0;
+  border-radius: var(--bs-nav-pills-border-radius);
+  color: var(--contact-color);
+  font-family: "tjMd";
+}
+
+#pills-tab{padding-bottom: 15px;    border-bottom: 1px solid #e8e8e8dd;}
