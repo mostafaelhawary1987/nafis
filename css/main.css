@@ -830,14 +830,16 @@ html[dir="ltr"] .nav-head {    left: 0;
   z-index: -1;
   transform: translateY(50%);
 }
-.produ-one{display: flex;justify-content: space-between;flex-wrap: wrap;}
+.produ-one{display: flex;justify-content: start;flex-wrap: wrap;}
 .prod-1{    background-color: var(--bread-color);
   border-radius: 20px;
   margin: 15px 0px;
   display: flex;
   justify-content: center;
   height: 210px;
-  width: 32%;}
+  width: 32%;
+margin: 7px;
+}
   .prod-flex{width: 100%;
     display: flex;
     justify-content: right;
