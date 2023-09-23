@@ -2843,3 +2843,148 @@ padding: 5px;
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
+/* Search */
+.search-icon{position: relative;
+  display: flex;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  margin: 0px 3px;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;}
+  .search-icon i {
+    font-size: 21px;
+    color: white;
+}
+.search-icon:hover{background-color: var(--sec-color);}
+.search-icon .link-om{display: flex;
+  align-items: center;}
+.search-st-abaya {
+  position: absolute;
+  top:14%;
+  left: 0;
+  width: 20%;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  z-index: -1;
+  transform: translateX(50%);
+}
+
+@media only screen and (max-width: 991px) {
+  .search-st-abaya {
+      top: 92%;
+      width: 100%;
+  }
+}
+
+
+.search-st-abaya.active {
+  opacity: 1;
+  z-index: 11;
+}
+
+@media only screen and (max-width: 991px) {
+  .search-st-abaya.active {
+      top: 92%;
+  }
+}
+
+.search-st-abaya .om-in {
+  width: 100%;
+  height: 50px;
+  padding: 0 22px;
+  background-color: #ffffff;
+  color: #000;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid #eaeaea;
+}
+
+.search-st-abaya .om-in::-webkit-input-placeholder {
+  color: #9f9b8b;
+  text-transform: capitalize;
+}
+
+.search-st-abaya .om-in:-ms-input-placeholder {
+  color: #9f9b8b;
+  text-transform: capitalize;
+}
+
+.search-st-abaya .om-in::-ms-input-placeholder {
+  color: #9f9b8b;
+  text-transform: capitalize;
+}
+
+.search-st-abaya .om-in::placeholder {
+  color: #9f9b8b;
+  text-transform: capitalize;
+}
+
+.search-st-abaya .om-in-submit {
+  position: absolute;
+    top: 50%;
+    left: 14px;
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    color: var(--contact-color);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 36px;
+}
+.top.fixedheader .search-st-abaya{top: 70%;}
+@media(max-width:1920px) {
+ 
+}
+/* statistics */
+.statistics{padding-top: 90px;
+  padding-bottom: 30px;
+}
+.statistics-section-flex {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #E6F3F4;
+  border-radius: 20px;
+  padding: 60px 0px;
+}
+
+.statistics-number {
+  text-align: center;
+}
+
+.stati-icon {
+  display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 118px;
+}
+.stati-icon i {
+  font-size: 60px;
+  color: var(--sec-color);
+}
+
+.statistics-number h4 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  direction: ltr;
+  margin-top: 20px;
+  color: var(--contact-color);
+}
+
+.statistics-number span {
+  font-size: 24px;
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-weight: 900;
+}

@@ -24,6 +24,26 @@ $(".closebtn,.overlay").click( function() {
   $('.overlay').fadeOut();
   $('body').removeClass('ovh');
 });
+// search 
+$('.search-butt-om').on("click", function (e) {
+    e.preventDefault();
+    $(".search-st-abaya").toggleClass('active');
+    $(this).toggleClass('colse-act-om');
+});
+
+// $('.colse-act-om').on("click" , function(e){
+//     e.preventDefault();
+    
+// });
+
+// overlay
+$('.overlay-om , header nav .close-xs').on("click", function (e) {
+    $(".search-om-form").removeClass("active");
+    $(".overlay-om").removeClass("active");
+    $(".search-st-omcot .close-om").removeClass("active");
+    $('body').css('overflow', 'auto');
+    $(".nav-xs-om").removeClass("active");
+});
 
 $(document).ready(function(){
 
@@ -156,6 +176,38 @@ $(document).ready(function(){
         }
     },
     navText: ['<i class="las la-arrow-right"></i>','<i class="las la-arrow-left"></i>'],
+
+});
+var a = 0;
+$(window).scroll(function() {
+
+    var oTop = $('.statistics-number,header').offset().top - window.innerHeight;
+    if (a == 0 && $(window).scrollTop() > oTop) {
+        $('.number').each(function() {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+            $({
+                countNum: $this.text()
+            }).animate({
+                countNum: countTo
+            },
+
+                       {
+
+                duration: 1000,
+                easing: 'swing',
+                step: function() {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function() {
+                    $this.text(this.countNum);
+                    //alert('finished');
+                }
+
+            });
+        });
+        a = 1;
+    }
 
 });
 $("h5[data-toggle='collapse']").on('click', function() {
