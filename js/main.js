@@ -222,7 +222,7 @@ $(".down[data-toggle='collapse']").on('click', function() {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     $('.top').addClass('fixedheader');
   } else {
     $('.top').removeClass('fixedheader');
