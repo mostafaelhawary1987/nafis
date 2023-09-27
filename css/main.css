@@ -727,7 +727,8 @@ html[dir="ltr"] .nav-head {    left: 0;
 .photo-head {
   position: relative;
 }
-.photo-head img{height:661px}
+.photo-head img{height:661px;border-radius: 15px;
+  overflow: hidden;}
 .overlay-slid {
   position: absolute;
   top: 0;
@@ -1798,7 +1799,7 @@ label input[type=checkbox] {
         }
         @media (max-width:991px){
           .top.fixedheader {
-            height: 100px;}
+            height: 90px;}
           .items-flex .select-item {
           width: 232px;
 
@@ -2946,7 +2947,7 @@ padding: 5px;
   align-items: center;}
 .search-st-abaya {
   position: absolute;
-  top:23%;
+  top:14%;
   left: 0;
   width: 20%;
   opacity: 0;
@@ -3116,6 +3117,7 @@ padding: 5px;
 
     }
 
+
     }
 
         @media(max-width:992px) {
@@ -3175,6 +3177,7 @@ padding: 5px;
 
 
 
+        @media(max-width:480px) {.product-icon{padding-top: 10px;}}
         @media(max-width:480px) {
           .cont-flex{    padding: 0px 20px; }
           .section-contact-us .head-title {
@@ -3258,3 +3261,54 @@ padding: 5px;
           text-transform: uppercase;
           font-weight: 900;
           color: var(--contact-color);}
+          .orders-btn .bt-cart:hover{opacity: 0.5;}
+          .orders-btn .bt-delet:hover{opacity: 0.5;}
+          .msger{margin-top: 60px;margin-bottom: 100px;}
+          .custom-box-shadow {
+            background-color: white;
+        }
+        .justify-content-center {
+          margin: 0px 15px !important;
+      }
+      .custom-box-shadow {
+
+        margin-top: 40px;
+        background-color: white;
+    }
+    .section-single-order .col-md-12{    margin-top: 60px !important;
+      margin-bottom: 100px !important;}
+
+      .section-orders .orders-btn{flex-direction: column;}
+      .section-orders .orders-btn{flex-direction: column;}
+      .section-orders .orders-btn .btn.btn-primary.btn_sm{
+        width: 45px;
+        display: flex;
+        height: 45px;
+        border-radius: 50%;
+        border: 0;
+        margin: 0px 3px;
+        align-items: center;
+        justify-content: center;
+        background-color: grey;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+          }
+        .section-orders .orders-btn .btn.btn-primary.btn_sm:hover{opacity: 0.5;}
+        .section-orders .orders-btn .btn.btn-danger.btn_sm{
+          width: 45px;
+          display: flex;
+          height: 45px;
+          border-radius: 50%;
+          border: 0;
+          margin: 0px 3px;
+          align-items: center;
+          justify-content: center;
+          margin-top: 5px;
+          background-color: blue !important;
+          -webkit-transition: 0.4s ease;
+          -o-transition: 0.4s ease;
+          transition: 0.4s ease;
+
+        }
+        .section-orders .orders-btn .btn.btn-danger.btn_sm:hover{opacity: 0.5;}
