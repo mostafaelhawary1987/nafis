@@ -712,7 +712,13 @@ html[dir="ltr"] .nav-head {    left: 0;
 }
   .lang-list>a{    -webkit-transition: 0.4s ease;
     -o-transition: 0.4s ease;
-    transition: 0.4s ease; color: var(--contact-color);}
+    transition: 0.4s ease;
+    color: var(--contact-color);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 3px 0px;
+    
+  }
     .lang-list>a:hover{color: var(--main-color);}
     .menu i{font-size: 10px;margin: 0px 2px;}
 
