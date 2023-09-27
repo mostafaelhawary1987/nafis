@@ -3250,3 +3250,11 @@ padding: 5px;
     .search-side-menu .search-om-form{width: 85%;
       margin: auto;}
       .search-side-menu i{font-size: 27px;}
+      #bookReport h5.modal-title{font-size: 19px;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: var(--contact-color);}
+        #bookReport label{font-size: 17px;
+          text-transform: uppercase;
+          font-weight: 900;
+          color: var(--contact-color);}
