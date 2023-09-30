@@ -48,7 +48,7 @@ $('.overlay-om , header nav .close-xs').on("click", function (e) {
 $(document).ready(function(){
 
   $('.slider-head').owlCarousel({
-    autoplay: false,
+    autoplay: true,
     rtl: true,
     loop: true,
     nav: true,
@@ -59,10 +59,10 @@ $(document).ready(function(){
 
 });
   $('.owl-select').owlCarousel({
-    autoplay: false,
+    autoplay: true,
     rtl: true,
     margin:25,
-    loop:false,
+    loop:true,
     nav: true,
     dots:true,
     responsive: {
@@ -89,10 +89,10 @@ $(document).ready(function(){
 
 });
   $('.owl-arrived').owlCarousel({
-    autoplay: false,
+    autoplay: true,
     rtl: true,
     margin:25,
-    loop:false,
+    loop:true,
     nav: true,
     dots:true,
     responsive: {
@@ -119,10 +119,10 @@ $(document).ready(function(){
 
 });
   $('.owl-products-home').owlCarousel({
-    autoplay: false,
+    autoplay: true,
     rtl: true,
     margin:25,
-    loop:false,
+    loop:true,
     nav: true,
     dots:true,
     responsive: {
@@ -149,10 +149,10 @@ $(document).ready(function(){
 
 });
   $('.owl-related-book').owlCarousel({
-    autoplay: false,
+    autoplay: true,
     rtl: true,
     margin:25,
-    loop:false,
+    loop:true,
     nav: true,
     dots:true,
     responsive: {
