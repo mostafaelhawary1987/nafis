@@ -481,7 +481,7 @@ html[dir="ltr"] .side-menu .sub_list li {
   padding-top: 29px;
  
 }
-.top{margin-bottom: 35px;}
+.top{margin-bottom: 15px;}
 .top.fixedheader{
   height: 90px;
   position: fixed;
@@ -498,13 +498,13 @@ html[dir="ltr"] .side-menu .sub_list li {
   transition: 0.4s ease; 
 }
 .top.fixedheader .logo-head img {
-  width: 142px;
-  height: 68px;
+  width: 121px;
+  height: 76px;
 }
 .top.fixedheader .top-head{padding-top: 10px;}
 /*------------menu-head------------*/
-.logo-head img{width: 177px;
-  height: 80px;}
+.logo-head img{width: 121px;
+  height: 121px;}
 
 .menu-head {
  margin: auto;
@@ -1224,7 +1224,7 @@ footer {
   background-position: 100%
 }
 
-
+.foot-logo img{width: 180px;}
 
 
 .links-1 ul li a:hover {
