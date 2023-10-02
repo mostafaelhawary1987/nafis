@@ -499,9 +499,9 @@ html[dir="ltr"] .side-menu .sub_list li {
 }
 .top.fixedheader .logo-head img {
   width: 121px;
-  height: 76px;
+  height: 80px;
 }
-.top.fixedheader .top-head{padding-top: 10px;}
+/* .top.fixedheader .top-head{padding-top: 10px;} */
 /*------------menu-head------------*/
 .logo-head img{width: 121px;
   height: 121px;}
@@ -823,20 +823,10 @@ html[dir="ltr"] .nav-head {    left: 0;
 /* home-products */
 .home-products{position: relative;}
 .home-bg{
-  position: absolute;
-  left: 0;
-  width: auto;
-  top: 26px;
-  z-index: -1;
-  transform: translateY(-50%);
+  display: none;
 }
 .home-bg-right{
-  position: absolute;
-  right: 0;
-  width: auto;
-  bottom: 0px;
-  z-index: -1;
-  transform: translateY(50%);
+  display: none;
 }
 .produ-one{display: flex;justify-content: start;flex-wrap: wrap;}
 .prod-1{    background-color: var(--bread-color);
@@ -1224,7 +1214,11 @@ footer {
   background-position: 100%
 }
 
-.foot-logo img{width: 180px;}
+.foot-logo img{
+  margin-top: -10px;
+    height: 135px;
+    width: 135px;
+}
 
 
 .links-1 ul li a:hover {
@@ -1494,9 +1488,9 @@ footer {
   width: 130px;
   height: 55px;
 }
-.top-head{    padding-top: 20px;}
+.top-head{    padding-top: 5px;}
 .top {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .overlay-slid{width: 75%;}
 .banner-cover h3 {
@@ -2529,12 +2523,7 @@ padding: 5px;
       .ask-send .btn{margin-top: 0;width: 100%;
       }
       }
-      .section-contact-us .home-bg,.section-about-us .home-bg{position: absolute;
-        left: 0;
-        width: auto;
-        top: 0;
-        z-index: -1;
-        transform: translateY(50%);}
+      .section-contact-us .home-bg,.section-about-us .home-bg{display: none;}
 .section-contact-us .head-title{margin-bottom: 65px;}
 .cont-flex{
   background-color: var(--white-color);
@@ -3315,3 +3304,12 @@ padding: 5px;
 
         }
         .section-orders .orders-btn .btn.btn-danger.btn_sm:hover{opacity: 0.5;}
+        .page-error-fix {width: 60%;
+          margin: auto;
+          text-align: center;
+          padding: 60px 0px;
+          background-color: white;}
+          .page-error-fix h2{font-size: 100px;
+            color: var(--contact-color);}
+          .page-error-fix p{font-size: 36px;
+            font-weight: bold;}
