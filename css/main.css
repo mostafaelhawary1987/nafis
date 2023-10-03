@@ -478,7 +478,7 @@ html[dir="ltr"] .side-menu .sub_list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 29px;
+  padding-top: 5px;
  
 }
 .top{margin-bottom: 15px;}
