@@ -390,7 +390,7 @@ html[dir="ltr"] .side-logo{
 /*--------sidenav----------*/
 
 .side-me{padding-top: 15px}
-.side-logo img {margin: auto;width: 145px;}
+.side-logo img {width: 110px;}
 .side-menu {
     display: inline-block;
     position: absolute;
@@ -845,7 +845,7 @@ margin: 7px;
     align-items: center;
     padding: 0px 30px;}
     .prod-title h3{
-      font-size: 42px;
+      font-size: 39px;
     font-weight: 600;
     color: var(--main-color);
     }
@@ -1485,8 +1485,8 @@ footer {
     text-align: unset;
 }
 .logo-head img {
-  width: 130px;
-  height: 55px;
+  width: 100px;
+  height: 90px;
 }
 .top-head{    padding-top: 5px;}
 .top {
@@ -1523,9 +1523,9 @@ footer {
 .links-1 h5 {
   margin-top: 15px;
 }
-.side-logo{padding: 10px 27px;}
+.side-logo{padding:5px 5px}
 .down{display: flex;justify-content: space-between;align-items: center;}
-
+.search-side-menu{padding-bottom: 50px;}
 .prod-title h3 {
   font-size: 30px;
 }
@@ -3224,14 +3224,14 @@ padding: 5px;
           margin-top: 5px;
           background-color: #ffffff;
           color: #000;
-          outline: none;
+          outline: none; 
           border-radius: 15px;
           border: 1px solid #eaeaea;
       }
       .search-side-menu .om-in-submit {
         position: absolute;
-        top: 55%;
-        left: 14px;
+        top: 58%;
+        left: 8px;
         background-color: transparent;
         border: none;
         font-size: 25px;
