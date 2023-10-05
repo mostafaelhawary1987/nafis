@@ -845,7 +845,7 @@ margin: 7px;
     align-items: center;
     padding: 0px 30px;}
     .prod-title h3{
-      font-size: 39px;
+      font-size: 30px;
     font-weight: 600;
     color: var(--main-color);
     }
@@ -1248,6 +1248,8 @@ footer {
 .foot-social i:first-child {
   margin: 0px
 }
+.contact-us.details .f-ti span{direction: ltr;
+  display: inline-block;}
 @media (min-width:767px) {
   .links-1>.collapse {
       display: block;
@@ -1739,7 +1741,7 @@ label input[type=checkbox] {
     background-color: var(--main-color);
   }
   .products-flex .status-book input[type="radio"] + label {
-    padding: 5px 15px;
+    padding: 2px 10px;
     border-radius: 8px;
   }
   .products-flex .status-book .status-book-flex{margin-bottom: 10px;
@@ -3312,7 +3314,4 @@ padding: 5px;
           .page-error-fix h2{font-size: 100px;
             color: var(--contact-color);}
           .page-error-fix p{font-size: 36px;
-            font-weight: bold;}
-
-
-           
+            font-weight: bold;}        
