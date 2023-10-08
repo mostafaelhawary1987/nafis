@@ -74,7 +74,7 @@
   
     outline: none;
   }
-  body{background-image: url(../images/pattern2.png);}
+ 
   body::-webkit-scrollbar {
     background-color: #fff;
     width: 7px;
@@ -546,6 +546,27 @@ html[dir="ltr"] .side-menu .sub_list li {
 li.lang-head{margin-right: 20px;
     border-right: 1px solid #D6D6D6;
     padding-right: 20px;}
+
+    .menu-head li:last-child {
+      background-color: #eb9b3a;
+    background-size: unset;
+    border: 1px solid #eb9b3a;
+    
+    background-color: #eb9b3a;
+    display: inline-block;
+    padding: 2px 5px;
+    width: 138px;
+    text-align: center;
+    background-color: #eb9b3a;
+    height: 35px;
+    background-image: none;
+    background-position: unset;
+    border-radius: 10px;
+    color: white;
+  } 
+  .menu-head li:last-child:hover{    opacity: 0.7;}
+  .menu-head li a:last-child {font-size: 18px;}
+  .menu-head li .la-plus{font-size: 16px;}
 .dropdown-head {
     position: relative;
 }
@@ -854,7 +875,11 @@ margin: 7px;
     font-size: 26px;
     color: var(--contact-color);
     }
-    .prod-photo img{   max-width: 60px;
+    .prod-photo img{  
+
+    width: 58px;
+    height: 71px;
+    max-width: 60px;
       max-height: 74px;}
       .prod-title{margin: 0px 25px;}
       /* owl selectBook */
@@ -1099,7 +1124,9 @@ margin: 7px;
 
 .subscribe img {
     display: inline-block;
-    margin-left: 15px
+    margin-left: 15px;
+    width: 53px;
+    height: 35px;
 }
 
 .join .form-control {
@@ -1151,6 +1178,14 @@ margin: 7px;
     background-color: #fff
 }
 @media (max-width: 1199px){
+  .menu-head li {
+    margin-right: 15px;
+}
+.menu .list-inline{display: flex;
+  align-items: center;}
+  .menu-head a {
+    font-size: 18px;}
+    .menu-head li:last-child a{font-size: 15px;}
 .join {
     flex-direction: column;
     align-items: center;
@@ -1563,12 +1598,12 @@ footer {
     background-color: #aa2929;
   }
   .product-icon button.ic-pro.heart:hover{
-    color: #aa2929;
+    color: #eb9b3a;
     background-color: var(--white-color);
-    border-color: #aa2929;
+    border-color: #eb9b3a;
     
   }
-  .product-icon button.ic-pro.heart:hover.ic-pro.heart i{color: #aa2929;}
+  .product-icon button.ic-pro.heart:hover.ic-pro.heart i{color: #eb9b3a;}
 
   .product-icon{
     display: flex;
