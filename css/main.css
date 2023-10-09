@@ -547,25 +547,24 @@ li.lang-head{margin-right: 20px;
     border-right: 1px solid #D6D6D6;
     padding-right: 20px;}
 
-    .menu-head li:last-child {
+    .menu-head li.login-link {
       background-color: #eb9b3a;
-    background-size: unset;
-    border: 1px solid #eb9b3a;
-    
-    background-color: #eb9b3a;
-    display: inline-block;
-    padding: 2px 5px;
-    width: 138px;
-    text-align: center;
-    background-color: #eb9b3a;
-    height: 35px;
-    background-image: none;
-    background-position: unset;
-    border-radius: 10px;
-    color: white;
-  } 
-  .menu-head li:last-child:hover{    opacity: 0.7;}
-  .menu-head li a:last-child {font-size: 18px;}
+      border: 1px solid #eb9b3a;
+      display: inline-block;
+      padding: 2px 5px;
+      width: 138px;
+      text-align: center;
+      height: 35px;
+      border-radius: 10px;
+      -webkit-transition: 0.4s ease;
+      -o-transition: 0.4s ease;
+      transition: 0.4s ease; 
+  }
+  .menu-head li.login-link:hover{  opacity: 0.7;}
+  .menu-head li.login-link a {
+    font-size: 17px;
+    -webkit-text-fill-color: white;
+}
   .menu-head li .la-plus{font-size: 16px;}
 .dropdown-head {
     position: relative;
@@ -1595,7 +1594,7 @@ footer {
   justify-content: center;
   align-items: center;}  
   .product-icon button.ic-pro.heart{
-    background-color: #aa2929;
+    background-color: #eb9b3a;
   }
   .product-icon button.ic-pro.heart:hover{
     color: #eb9b3a;
