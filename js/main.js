@@ -250,7 +250,9 @@ $(function() {
     });
     
   });
-
+  $(".advanced-search-btn").click(function () {
+    $(".advanced-input").slideToggle("300");
+  });
   $('#contactForm button.close').on('click ', function(event) {
     $('#contactForm').fadeOut();
     $('.contact-over').fadeOut();
