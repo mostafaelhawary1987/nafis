@@ -4065,7 +4065,7 @@ padding: 5px;
   visibility: hidden;
   z-index: 400;
   border: 1px solid #e5e5e5;
-  min-width: 156px;
+  width: 256px;
 }
 
 .down_nav .demo>ul>li:hover .sub_text {
