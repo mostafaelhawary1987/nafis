@@ -551,7 +551,7 @@ li.lang-head{margin-right: 20px;
     padding-right: 20px;}
 
     .menu-head li.login-link { 
-      .menu-head li.login-link {
+ 
         background-color: #eb9b3a;
         border: 1px solid #eb9b3a;
         display: inline-block;
@@ -563,7 +563,7 @@ li.lang-head{margin-right: 20px;
         -webkit-transition: 0.4s ease;
         -o-transition: 0.4s ease;
         transition: 0.4s ease;
-    }
+  
   }
   .menu-head li.login-link:hover{  opacity: 0.7;}
   .menu-head li.login-link a {
@@ -3928,7 +3928,6 @@ padding: 5px;
 .down_nav {
 
     height: 50px;
-    background-color: #E6F3F4;
     line-height: 50px;
     margin-bottom: 15px;
 
