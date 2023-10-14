@@ -2431,6 +2431,15 @@ label input[type=checkbox] {
         flex-wrap: wrap;
         width: 100%;
     }
+
+    .box-one {
+      margin-bottom: 15px;
+    }
+    .box-one svg {
+      vertical-align: middle;
+      width: 90px;
+      height: 110px;
+    }
     .cart-item-photo p {
      width: 100%;
    
@@ -3667,11 +3676,12 @@ padding: 5px;
   color: #fff;
 }
 .advanced-search-form label{
-  font-size: 15px;
+  /* font-size: 15px;
   font-weight: 700;
   color: #000;
   padding: 0 4px;
-  margin: 0 0 11px;
+  margin: 0 0 11px; */
+  display: none;
 }
 @media (max-width: 991px) {
   .advanced-search-btn {
@@ -3795,6 +3805,9 @@ padding: 5px;
   }
   .prod-photo svg {
     width: 83px;
+  }
+  .prod-title span {
+    font-size: 23px;
   }
   .prod-1 {
     height: 145px;
