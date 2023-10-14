@@ -3790,7 +3790,7 @@ padding: 5px;
 .inputs-line-two .form-group {
   max-width: 100%;
   overflow: hidden;
-  margin-bottom: 0;
+
 }
 
 @media (max-width: 1199px) {
