@@ -1982,6 +1982,7 @@ label input[type=checkbox] {
       .crumb-head{
 
         margin-bottom: 10px;
+        display: none;
     }
     .bread{display: flex;
       height: 50px;
@@ -2479,9 +2480,9 @@ label input[type=checkbox] {
       .head-title h2 {
         position: relative;
         color: var(--contact-color);
-        font-size: 40px;
+        font-size:33px;
         font-family: "tjBlk";
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         margin-top: 20px
   
     }
@@ -2749,7 +2750,7 @@ padding: 5px;
       }
       }
       .section-contact-us .home-bg,.section-about-us .home-bg{display: none;}
-.section-contact-us .head-title{margin-bottom: 65px;}
+.section-contact-us .head-title{margin-bottom: 35px;}
 .cont-flex{
   background-color: var(--white-color);
   padding: 55px 25px;
@@ -3351,7 +3352,7 @@ padding: 5px;
           width: 30%;
       }
       .top.fixedheader .logo-head {
-        width: 18%;
+        width: 25%;
         text-align: center;
     }
       .top.fixedheader .menu-head li {
@@ -3668,6 +3669,7 @@ padding: 5px;
   font-size: 12px;
   -webkit-margin-start: 8px;
           margin-inline-start: 8px;
+          display: none;
 }
 
 .advanced-search-btn:hover, .advanced-search-btn:focus {
