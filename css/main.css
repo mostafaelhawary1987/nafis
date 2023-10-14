@@ -2566,9 +2566,9 @@ label input[type=checkbox] {
 }
 .head-title h2 {
 
-  font-size: 34px;
+  font-size: 28px;
   margin-bottom: 25px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 }
 @media (max-width: 425px) {
