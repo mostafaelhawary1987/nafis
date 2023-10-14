@@ -4144,3 +4144,10 @@ display: none;
   font-weight: 900;
   margin-bottom: 0;
 }}
+
+.not-allowed{
+  opacity: 0.3;
+  background-color: #dbdbdb !important;
+  cursor: not-allowed !important;
+  pointer-events: none;
+}
