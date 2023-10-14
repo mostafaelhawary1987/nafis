@@ -219,6 +219,10 @@ $(".down[data-toggle='collapse']").on('click', function() {
   $(this).parent().children('.collapse').collapse('toggle');
   $(this).parent().siblings().find('.collapse.in').collapse('hide');
 });
+$(".title[data-toggle='collapse']").on('click', function() {
+    $(this).parent().children('.collapse').collapse('toggle');
+    $(this).parent().siblings().find('.collapse.in').collapse('hide');
+});
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -252,6 +256,9 @@ $(function() {
   });
   $(".advanced-search-btn").click(function () {
     $(".advanced-input").slideToggle("300");
+  });
+  $(".title").click(function () {
+    $(".demo").slideToggle("300");
   });
   $('#contactForm button.close').on('click ', function(event) {
     $('#contactForm').fadeOut();
