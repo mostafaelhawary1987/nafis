@@ -1256,10 +1256,14 @@ html[dir="ltr"] .nav-head {    left: 0;
     align-content: center;
     height: 349px;
 }
-.box-one{}
+
 .box-one img{
   width: 120px;
   height: 105px;
+}
+.box-one svg{
+  width: 100px !important;
+  height: 95px !important;
 }
 .box-one p{
   font-size: 31px;
@@ -3883,7 +3887,7 @@ padding: 5px;
   position: relative;
   order: 2;
 }
-.search-bar .form-group{width: 556px;}
+.search-bar .form-group{width: 556px;margin-bottom: 0;}
 .search-bar .searchinput {
   background-color: #E6F3F4;
   width: 100%;
@@ -3979,7 +3983,7 @@ padding: 5px;
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-
+    position: relative;
 }
 
 .down_nav .demo .sub {
@@ -4058,13 +4062,13 @@ padding: 5px;
   background-color: #ffffff;
   right: 214px;
   top: 0;
-  padding: 10px 20px;
+
   border: 0;
   transition: 0.5s ease;
   opacity: 0;
   visibility: hidden;
   z-index: 400;
-  border: 1px solid #e5e5e5;
+ 
   width: 256px;
 }
 
@@ -4095,7 +4099,11 @@ padding: 5px;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
+.sub_text>li{
+  padding: 3px 10px;
+    border-radius: 3px;
 
+}
 .sub_text>li:not(:last-child) {
   border-bottom: 1px solid #f2f2f2;
 }
