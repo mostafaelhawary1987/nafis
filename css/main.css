@@ -3012,12 +3012,12 @@ padding: 5px;
   text-align: center;
   padding: 10px 5px;
   margin: 0 7.5px;
-  width: 30%;
+  width: 23%;
 }
 .account-flex ul>li>a{
   font-size: 16px;
   width: 100%;
-  height: 160px;
+  height: 130px;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -3045,6 +3045,21 @@ padding: 5px;
   font-size: 40px;
   margin-bottom: 9px;
   color: var(--sec-color);}
+  @media(max-width:991px) {
+    .account-flex ul li{width: 22%;}
+    .account-flex span {
+      font-size: 18px;}
+      .account-flex li>a>i {
+        font-size: 35px;
+    }
+    .account-flex ul>li>a {
+      align-items: center;
+      padding: 0px 10px;
+  }
+  .account-flex li>a>i {
+    font-size: 40px;
+}
+}
   @media(max-width:480px) {
   .account-flex ul {
     justify-content: center;
@@ -3415,7 +3430,8 @@ padding: 5px;
         .prod-1 {
           width: 80%;
       }
-      .account-flex ul li{width: 45%;}
+      .account-flex ul li{width: 47%;
+        margin: 0;}
       .account-flex span {
         font-size: 17px;
     }
@@ -3426,9 +3442,7 @@ padding: 5px;
       padding: 0px 10px;
 
   }
-  .account-flex ul {
-    justify-content: start;
-}
+
 .type-book-flex-one {
   flex-direction: column;
 }
@@ -3953,7 +3967,7 @@ padding: 5px;
   padding: 0 30px;
   cursor: pointer;
   font-family: 'tj';
-
+border-radius: 5px;
 }
 .title i{margin: 0px 8px;}
 .down_nav .title>.fa {
@@ -3965,7 +3979,7 @@ padding: 5px;
   position: absolute;
   z-index: 999;
   background-color: #ffffff;
- 
+  border-radius: 5px;
   display: none;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
   box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1);
@@ -4158,4 +4172,22 @@ display: none;
   background-color: #dbdbdb !important;
   cursor: not-allowed !important;
   pointer-events: none;
+}
+
+.wishlist .table-responsive{
+  box-shadow: 0px 0px 8px 0px rgba(1, 1, 1, 0.1) !important;
+  border-radius: 15px !important;
+  font-family: 'tj' !important;
+}
+.wishlist tbody{
+  border-style: unset !important;
+    border-color: transparent !important;
+}
+.wishlist .table-responsive tr{
+  border-width: 0px 0px !important;
+    border-style: unset !important;
+    border-color: transparent !important;
+}
+.wishlist .table>:not(caption)>*>* {
+  padding: 10px 5px !important;
 }
