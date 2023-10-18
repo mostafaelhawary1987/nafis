@@ -4195,7 +4195,7 @@ display: none;
   position: relative;
 
 }
-.notification i{    font-size: 21px;}
+.notification i,.messages i{    font-size: 21px;}
 .notification .notifi-count {
   display: flex;
   align-items: center;
@@ -4217,7 +4217,7 @@ display: none;
 
 
 
-.notification a{
+.notification a,.messages a{
   display: flex;
   background-color: var(--main-color);
   border-radius: 5px;
@@ -4227,11 +4227,14 @@ display: none;
   color: white;
   width: 40px;
   height: 40px;
-  margin: 0px 7px;
+  margin: 0px 3px;
   -webkit-transition: 0.4s ease;
   -o-transition: 0.4s ease;
   transition: 0.4s ease;}
   .notification a:hover{
+    background-color: var(--sec-color);
+  }
+  .messages a:hover{
     background-color: var(--sec-color);
   }
 .notification a:hover span{
