@@ -4561,3 +4561,16 @@ left: 1px;
 .delete-notif:hover{opacity: 0.7;}
 .notif-cont i{font-size: 19px;margin-right: 3px;}
 .cart-title a:hover{color: var(--main-color);}
+
+.p-3 a.btn.btn-primary{
+  width: 165px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media (max-width: 480px) {
+  .d-flex.p-3{
+    flex-wrap: wrap;
+  }
+}
