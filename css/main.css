@@ -2148,7 +2148,7 @@ label input[type=checkbox] {
         .sing-title-flex{
           display: flex;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 10px;
         }
         .sing-title-flex h3{
           width: 65%;
@@ -4594,3 +4594,52 @@ left: 1px;
   }
 }
 .card.p-2 .text-center img{display: none;}
+/*  */
+
+.shareit {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.shareit a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: #fff;
+	opacity: 0.75;
+	transition: opacity 0.15s linear;
+  text-decoration: none;
+}
+
+.shareit a:hover {
+	opacity: 1;
+}
+
+.facebook {
+ 	background: #3b5998;
+}
+
+.twitter {
+  	background: #000000;
+}
+
+.linkedin {
+  background: #0077b5;
+}
+
+.reddit {
+  	background: #FF4500;
+}
+
+.tumblr {
+  	background: #000000;
+}
+
+.pinterest {
+  	background: #cb2027;
+}
+.cyc img{width: 24px;height: 24px;}
