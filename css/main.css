@@ -1768,7 +1768,7 @@ footer {
     border: 0;
     background-color: #E6F3F4;
   }
-  .d-flex h6:first-of-type{
+  .d-flex h6{
     font-size: 15px;
     font-weight: 600;
     color: var(--grey-color);
@@ -1785,14 +1785,24 @@ footer {
     border-top: 1px solid #ccc;
     opacity: .25;
 }
-  .d-flex h6:last-of-type{background-color: var(--main-color);
+  /* .d-flex h6:last-of-type{background-color: var(--main-color);
     border-radius: 5px;
     color: white;
     width: 30px;
     height: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;} */
+    .book_counts h6{
+      background-color: var(--main-color);
+    border-radius: 5px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
     .grid-products .items-flex{
       justify-content: start;
     display: flex;
@@ -1801,11 +1811,12 @@ footer {
     .grid-products .items-flex .select-item {
       margin: 2px 10px;
       margin-bottom: 30px;
+      width: 23%;
   }
 .name-products{border: 1px solid #D9D9D9;background-color: var(--white-color);
   border-radius: 15px;
   padding: 25px 17px;}
-.items-products{width: 80%;}
+.items-products{width: 100%;}
 .items-flex .select-item{width: 267px;margin-bottom: 30px;}
 .select-item{position: relative;}
 /* .select-item:hover .pro-overlay {
@@ -2056,6 +2067,11 @@ label input[type=checkbox] {
     .bread li a:hover{color: #BD892C;}
     .bread li {    font-size: 17px;
       color: #888888;
+        }
+        @media (max-width:1199px){
+          .grid-products .items-flex .select-item {
+            width: 22%;
+        }
         }
         @media (max-width:1024px){
           .name-products {
@@ -4287,9 +4303,12 @@ border-radius: 5px;
 }
 @media (max-width: 1024px) {
   .grid-products .cate-products{width: 22%;}
-  .grid-products .items-flex .select-item {width: 41%;}
+  .grid-products .items-flex .select-item {width: 31%;}
 }
 @media (max-width: 991px) {
+  .grid-products .items-flex {
+    justify-content: center;
+}
   .grid-products .cate-products {
     width: 30%;
 }
@@ -4574,3 +4593,4 @@ left: 1px;
     flex-wrap: wrap;
   }
 }
+.card.p-2 .text-center img{display: none;}
