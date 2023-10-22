@@ -4635,6 +4635,9 @@ left: 1px;
   	background: #FF4500;
 }
 
+.whatsapp {
+  	background: #128c7e;
+}
 .tumblr {
   	background: #000000;
 }
@@ -4646,11 +4649,9 @@ left: 1px;
 .head-flex{
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
-.head-flex .head-title{
-  margin: auto;
-}
+
 .head-flex .mb-3.btn.btn-sm.btn-success.text-white{
   background-color: transparent !important;
   border: 0px solid transparent !important;
@@ -4669,13 +4670,9 @@ left: 1px;
   color: var(--bs-btn-hover-color);
   background-color: transparent;
   border-color: transparent;}
-.btn:hover {
-  color: var(--bs-btn-hover-color);
-  background-color: transparent;
-  border-color: transparent;
-  opacity: 0.7;
-}
-.head-flex i{color: var(--main-color);}
+
+.head-flex i{color: var(--main-color);    font-size: 28px;
+  margin: 0px 5px;}
 @media (max-width: 480px) {
   .head-flex{flex-direction: column;}
 
