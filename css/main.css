@@ -2116,7 +2116,8 @@ label input[type=checkbox] {
       margin-top: 30px;
   }
   .select-item img {
-    height: 225px;
+    aspect-ratio: 4 / 3;
+    width: 80%;
 }
       }
 
@@ -4706,3 +4707,8 @@ left: 1px;
     -o-transition: 0.5s ease;
     transition: 0.5s ease;
   }
+  .side-menu ul li.add-book-mob {
+    background-color: var(--main-color);
+
+  }
+  .side-menu ul li.add-book-mob>a{color: white;}
