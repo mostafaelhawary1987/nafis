@@ -2698,7 +2698,7 @@ padding: 5px;
   background-color: var(--main-color);
 }
 /* Contact US */
-* Contact Page */
+/* Contact Page */
 .contact-us.details {
   
     border: 1px solid #efefef;
@@ -4712,3 +4712,33 @@ left: 1px;
 
   }
   .side-menu ul li.add-book-mob>a{color: white;}
+  .whats {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    border-radius: 50%;
+    bottom: 100px;
+    right: 170px;
+    background-color: #38b828;
+    color: #fff!important;
+    z-index: 99999;
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.whats:hover {
+  color: #fff!important;
+  opacity: .8;
+  text-decoration: none
+}
+@media (max-width: 1500px) {
+  .whats {
+      right:40px
+  }
+}
